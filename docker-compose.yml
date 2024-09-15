@@ -1,0 +1,24 @@
+version: '2.4'
+services:
+    Devshift.NewsBoardManagement.Api:
+        container_name: Devshift.NewsBoardManagement.Api
+        environment:
+            ASPNETCORE_ENVIRONMENT: Development
+            ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
+            TZ: Asia/Bangkok
+        cpus: 1
+        mem_limit: 1gb
+        network_mode: bridge
+        volumes:
+            - ../secrets/secrets.json:/app/secrets.json
+        image: ${DOCKER_IMAGE}
+        logging:
+            driver: fluentd
+            options:
+              tag: dotnet
+        ports:
+            - "32002:32002"
+        restart: unless-stopped
+        ulimits:
+            core: 0
+            
