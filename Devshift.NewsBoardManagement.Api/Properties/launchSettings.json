@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles": {
+      "Default": {
+        "commandName": "Project",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Development",
+          "Consul:Discovery:Enabled": "true",
+          "Consul:Discovery:Hostname": "localhost",
+          "Consul:Token": "42a34c25-678a-44f1-bfd6-57a3b9a07e44"
+        }
+      }
+    }
+  }
