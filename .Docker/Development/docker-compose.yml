@@ -3,7 +3,7 @@ services:
   devshift.newsboardmanagement.api:
     container_name: devshift.newsboardmanagement.api
     environment:
-      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
       TZ: Asia/Bangkok
     cpus: 1

@@ -4,9 +4,10 @@
       "Default": {
         "commandName": "Project",
         "environmentVariables": {
-          "ASPNETCORE_ENVIRONMENT": "Production",
+          "ASPNETCORE_ENVIRONMENT": "Development",
           "Consul:Discovery:Enabled": "true",
-          "Consul:Discovery:Hostname": "http://workstation01.devshift.local",
+          "Consul:Discovery:Hostname": "devshift.newsboardmanagement.api.local",
+          "Consul:Discovery:ServiceName": "ecommerce.goldsaving.api.local",
           "Consul:Token": "42a34c25-678a-44f1-bfd6-57a3b9a07e44"
         }
       }

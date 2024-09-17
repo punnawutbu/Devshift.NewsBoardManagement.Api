@@ -23,7 +23,7 @@ namespace Devshift.NewsBoardManagement.Api {
                 {
                     config.AddJsonFile("appsettings.json", false, false)
                         // .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", false, false)
-                        .AddJsonFile($"appsettings.Production.json", false, false)
+                        .AddJsonFile($"appsettings.Development.json", false, false)
                         .AddJsonFile("secrets.json", true, false)
                         .AddEnvironmentVariables();
                 })
