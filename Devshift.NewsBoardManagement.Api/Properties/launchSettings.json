@@ -4,9 +4,9 @@
       "Default": {
         "commandName": "Project",
         "environmentVariables": {
-          "ASPNETCORE_ENVIRONMENT": "Development",
+          "ASPNETCORE_ENVIRONMENT": "Production",
           "Consul:Discovery:Enabled": "true",
-          "Consul:Discovery:Hostname": "localhost",
+          "Consul:Discovery:Hostname": "http://workstation01.devshift.local",
           "Consul:Token": "42a34c25-678a-44f1-bfd6-57a3b9a07e44"
         }
       }
