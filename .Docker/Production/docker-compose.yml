@@ -16,10 +16,10 @@ services:
     #   - ../secrets/Certs/ap-southeast-1-bundle.pem:/app/Certs/ap-southeast-1-bundle.pem
     #   - ../secrets/Certs/nio.crt:/usr/local/share/ca-certificates/nio.crt
     image: markpunbu/devshift.newsboardmanagement.api:latest
-    logging:
-      driver: fluentd
-      options:
-        tag: dotnet
+    # logging:
+    #   driver: fluentd
+    #   options:
+    #     tag: dotnet
     ports:
       - "32002:32002"
     restart: unless-stopped
