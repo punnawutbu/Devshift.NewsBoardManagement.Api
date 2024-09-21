@@ -12,10 +12,10 @@ services:
     volumes:
       - ../secrets/secrets.json:/app/secrets.json
     image: markpunbu/devshift.newsboardmanagement.api:latest
-    logging:
-      driver: fluentd
-      options:
-        tag: dotnet
+    # logging:
+    #   driver: fluentd
+    #   options:
+    #     tag: dotnet
     ports:
       - "32002:32002"
     restart: unless-stopped
