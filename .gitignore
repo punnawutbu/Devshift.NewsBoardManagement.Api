@@ -274,6 +274,6 @@ __pycache__/
 
 # End of https://www.gitignore.io/api/aspnetcore
 # Development
-Staging
+# Staging
 .Jenkins
 secrets
