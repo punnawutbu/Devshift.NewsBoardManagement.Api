@@ -22,12 +22,12 @@ namespace Devshift.NewsBoardManagement.Api {
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
                     config.AddJsonFile("appsettings.json", false, false)
-                        // .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", false, false)
-                        .AddJsonFile($"appsettings.Development.json", false, false)
+                        .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", false, false)
+                        // .AddJsonFile($"appsettings.Development.json", false, false)
                         .AddJsonFile("secrets.json", true, false)
                         .AddEnvironmentVariables();
                 })
-                .AddDiscoveryClient()
+                // .AddDiscoveryClient()
                 .UseNLog();
     }
 }
