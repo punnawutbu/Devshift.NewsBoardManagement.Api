@@ -11,7 +11,7 @@ services:
     network_mode: bridge
     volumes:
       - ../secrets/secrets.json:/app/secrets.json
-    image: { { DOCKER_IMAGE } }
+    image: markpunbu/devshift.newsboardmanagement.api:latest
     logging:
       driver: fluentd
       options:
