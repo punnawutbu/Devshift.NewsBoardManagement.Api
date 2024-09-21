@@ -19,3 +19,5 @@ services:
     ports:
       - "32002:32002"
     restart: unless-stopped
+    extra_hosts:
+      - "workstation01.devshift.local:192.22.1.102"
